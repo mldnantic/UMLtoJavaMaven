@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ejLyQKx-Ee6ArodMaGmEMQ" name="DrugiDeoISClassDIagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_erO7AKx-Ee6ArodMaGmEMQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_iipRcKx-Ee6ArodMaGmEMQ" name="Lice">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y5fjEKyJEe6nGv_WAsW7lw" name="ime" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2kmi4KyJEe6nGv_WAsW7lw" name="prezime" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3nyeMKyJEe6nGv_WAsW7lw" name="jmbg" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4wS-YKyJEe6nGv_WAsW7lw" name="datumRodjenja" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8hO5YKyJEe6nGv_WAsW7lw" name="adresa" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-XwWIKyJEe6nGv_WAsW7lw" name="stepenObrazovanja" visibility="private" type="_MP-qMKyKEe6nGv_WAsW7lw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BULrAKyKEe6nGv_WAsW7lw" name="prijaviSeNaKonkurs">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_deIi0KyLEe6mTORcswfQEw" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DDKVUKyKEe6nGv_WAsW7lw" name="dajOtkaz">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hCVpYKyLEe6mTORcswfQEw" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ktQu4Kx-Ee6ArodMaGmEMQ" name="Evidencija">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DXotUKyGEe6gJv-ZiNZzLA" name="upisPodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K5ofIKyGEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q1yUgKyGEe6gJv-ZiNZzLA" name="posaljiMailove"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Z_u7kKyGEe6gJv-ZiNZzLA" name="upisPodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dUPZQKyGEe6gJv-ZiNZzLA" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eSX1cKyGEe6gJv-ZiNZzLA" name="izmenaPodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_hEszIKyGEe6gJv-ZiNZzLA" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ" effect="update"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jAvCAKyGEe6gJv-ZiNZzLA" name="brisanjePodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nKu9QKyGEe6gJv-ZiNZzLA" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ" effect="delete"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rr6CYKyGEe6gJv-ZiNZzLA" name="izmenaPodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wKMLkKyGEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ" effect="update"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_x2PdsKyGEe6gJv-ZiNZzLA" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ" effect="update"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zxj64KyGEe6gJv-ZiNZzLA" name="proveraUslovaZaZaposlenje">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3Hq7EKyGEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ" effect="read"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ma1rAKx-Ee6ArodMaGmEMQ" name="Ugovor">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nzhmIKyHEe6gJv-ZiNZzLA" name="nazivKompanije" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w0OxoKyHEe6gJv-ZiNZzLA" name="nazivZanimanja" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8o1oIKyHEe6gJv-ZiNZzLA" name="datumPocetka" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A8VdoKyIEe6gJv-ZiNZzLA" name="datumZavrsetka" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FA6GUKyIEe6gJv-ZiNZzLA" name="tipUgovora" visibility="private" type="_KkjVEKyIEe6gJv-ZiNZzLA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_i0j8UKyIEe6gJv-ZiNZzLA" name="plata" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qD7GAKyIEe6gJv-ZiNZzLA" name="proveraDatumaZavrsetka"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2IpAoKx-Ee6ArodMaGmEMQ" name="CentarZaZaposljavanje">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-HRKcKyGEe6gJv-ZiNZzLA" name="proveraStatusa">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AwU3YKyHEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BqsN4KyHEe6gJv-ZiNZzLA" name="upisLicnihPodataka">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_E6yFoKyHEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FvNMMKyHEe6gJv-ZiNZzLA" name="azuriranjeRadnogStaza">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JhAC0KyHEe6gJv-ZiNZzLA" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__8UhMKx-Ee6ArodMaGmEMQ" memberEnd="__8e5QKx-Ee6ArodMaGmEMQ __8k_4Kx-Ee6ArodMaGmEMQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__8bO4Kx-Ee6ArodMaGmEMQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__8cdAKx-Ee6ArodMaGmEMQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__8e5QKx-Ee6ArodMaGmEMQ" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ" association="__8UhMKx-Ee6ArodMaGmEMQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GBgWwKx_Ee6ArodMaGmEMQ" value="2"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__8k_4Kx-Ee6ArodMaGmEMQ" name="lice" type="_iipRcKx-Ee6ArodMaGmEMQ" association="__8UhMKx-Ee6ArodMaGmEMQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_JL85gKx_Ee6ArodMaGmEMQ" client="_iipRcKx-Ee6ArodMaGmEMQ" supplier="_2IpAoKx-Ee6ArodMaGmEMQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_K-3BkKx_Ee6ArodMaGmEMQ" client="_ktQu4Kx-Ee6ArodMaGmEMQ" supplier="_2IpAoKx-Ee6ArodMaGmEMQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ONpRwKx_Ee6ArodMaGmEMQ" memberEnd="_ONrG8Kx_Ee6ArodMaGmEMQ _ONruAKx_Ee6ArodMaGmEMQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ONqf4Kx_Ee6ArodMaGmEMQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ONqf4ax_Ee6ArodMaGmEMQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ONrG8Kx_Ee6ArodMaGmEMQ" name="evidencija" type="_ktQu4Kx-Ee6ArodMaGmEMQ" association="_ONpRwKx_Ee6ArodMaGmEMQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ONruAKx_Ee6ArodMaGmEMQ" name="ugovor" type="_ma1rAKx-Ee6ArodMaGmEMQ" association="_ONpRwKx_Ee6ArodMaGmEMQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIQCkKx_Ee6ArodMaGmEMQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zr6E0Kx_Ee6ArodMaGmEMQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_KkjVEKyIEe6gJv-ZiNZzLA" name="TipUgovora">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XHl-4KyIEe6gJv-ZiNZzLA" name="polovicnoRadnoVreme"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ZPZ_8KyIEe6gJv-ZiNZzLA" name="punoRadnoVreme"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Wct14KyIEe6gJv-ZiNZzLA" client="_KkjVEKyIEe6gJv-ZiNZzLA" supplier="_ma1rAKx-Ee6ArodMaGmEMQ"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_MP-qMKyKEe6nGv_WAsW7lw" name="stepenObrazovanja">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NeLisKyKEe6nGv_WAsW7lw" name="srednjaSkola"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_-zvSEKyKEe6mTORcswfQEw" name="visaSkola"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Azlp8KyLEe6mTORcswfQEw" name="fakultet"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_FbUDAKyLEe6mTORcswfQEw" client="_MP-qMKyKEe6nGv_WAsW7lw" supplier="_iipRcKx-Ee6ArodMaGmEMQ"/>
+</uml:Model>
